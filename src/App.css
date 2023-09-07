@@ -1,0 +1,210 @@
+#root {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(310deg, #08143d, #1f6d3a);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+}
+
+.read-the-docs {
+  color: #888;
+  
+}
+
+* {
+  background-color: transparent;
+}
+
+.divHeader {
+  background-color: rgb(128, 128, 128);
+  border: #bd34fe solid 1px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  max-height: 133px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.divUsuario {
+  display: flex;
+}
+
+.logo {
+  height: 6em;
+  margin: 19px 16px;
+  filter: drop-shadow(0 0 2em #ffffff87);
+  border-radius: 1000px;
+}
+
+.divUserEmail {
+max-height: 144px;
+}
+
+.tUserName {
+  color: white;
+  font-size:x-large;
+  max-height: 50px;
+  margin-top: 31px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.tEmail {
+  color: white;
+  margin-bottom: 31px;
+  margin-top: 5px;
+  margin-left: 10px;
+  max-height: 50px;
+  font-style: italic;
+  text-align: left;
+}
+
+
+
+
+.card {
+  margin: 26px 0px 31px 0px;
+  min-width: 184px;
+  max-width: 190px;
+  
+}
+
+.bLoginGoogle {
+  color: white;
+  background-image: linear-gradient(0deg, #08143d, #2fcc66);
+  border: 2px solid black;
+  margin: 4px;
+  padding: 7px 4px 7px 5px;
+}
+.bLoginGoogle:hover {
+  filter: drop-shadow(0 0 2em #26ff0077);
+}
+
+.bDeslogar {
+  color: white;
+  background-image: linear-gradient(180deg, #08143d, #cc492f);
+  border: 2px solid black;
+  margin: 4px;
+  padding: 7px 10px 7px 10px;
+}
+.bDeslogar:hover {
+  filter: drop-shadow(0 0 2em #ff0000);
+}
+
+.divPosts {
+  margin: 115px 1em 60px 1em;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.posts {
+  border: #567430 solid 5px;
+  border-radius: 10px;
+  width: 75%;
+  background-color: #3c8676;
+  /* align-items: center; */
+  margin: 35px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo {
+  /* margin-top: 10px; */
+  width: 6%;
+  border-radius: 50px;
+  margin: 0px 0px 0px 4%;
+}
+
+.divConteudoPosts {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.tNameUser {
+  color: rgb(0, 0, 0);
+  background-color: #7a9ab9;
+  width: auto;
+  border-radius: 50px;
+  height: auto;
+  border: #000000 solid 1px;
+  font-size: larger;
+  display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 2% 0 0 5%;
+}
+
+.tHorario {
+  margin: 2% 0px 0px 7px;
+  color: white;
+  background: transparent;
+}
+
+.tTextPost {
+  color: rgb(0, 0, 0);
+  background-color: #7a9ab9;
+  width: 90%;
+  border-radius: 7px;
+  border: rgb(0, 0, 0) solid 2px;
+  margin: 2% 5% 2% 5%;
+}
+
+.buttonCriarPost{
+  margin: 0px;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 92%;
+  left: 47%;
+}
+.divEnviarMsg {
+  display: none;
+  position: fixed;
+  top: 92%;
+  left: 25%;
+  width: 50%;
+  height: 48px;
+  border: white 1px solid;
+  border-radius: 10px;
+  background-color: #99b381;
+}
+
+.input1 {
+  background-color: white;
+  border: white 1px solid;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  width: 80%;
+  padding: 3px 3px 3px 5px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.bEnviarMsg {
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(180deg, #f6fd17, #43b64c);
+  border: 2px solid rgb(0, 0, 0);
+  margin: 4px;
+  padding: 7px 10px 7px 10px;
+}
+.bEnviarMsg:hover {
+  filter: drop-shadow(0 0 2em #2ec754);
+}
+
+/* .tArea {
+  width: 100%;
+  min-height: 200px;
+} */
