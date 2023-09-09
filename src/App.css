@@ -13,16 +13,23 @@
 
 .read-the-docs {
   color: #888;
-  
 }
 
 * {
   background-color: transparent;
 }
 
+.tLiveBlog {
+  color: white;
+  position: fixed;
+  top: 5px;
+  left: 42%;
+}
+
+/* #5234fe */
 .divHeader {
-  background-color: rgb(128, 128, 128);
-  border: #bd34fe solid 1px;
+  background-color: rgb(42, 85, 81);
+  border: #37b83e solid 1px;
   border-radius: 3px;
   display: flex;
   justify-content: space-between;
@@ -67,14 +74,10 @@ max-height: 144px;
   text-align: left;
 }
 
-
-
-
 .card {
   margin: 26px 0px 31px 0px;
   min-width: 184px;
   max-width: 190px;
-  
 }
 
 .bLoginGoogle {
@@ -123,7 +126,7 @@ max-height: 144px;
   /* margin-top: 10px; */
   width: 6%;
   border-radius: 50px;
-  margin: 0px 0px 0px 4%;
+  margin: 2% 0px auto 4%;
 }
 
 .divConteudoPosts {
@@ -140,7 +143,7 @@ max-height: 144px;
   width: auto;
   border-radius: 50px;
   height: auto;
-  border: #000000 solid 1px;
+  border: #000000 solid 2px;
   font-size: larger;
   display: inline-block;
   padding-left: 2%;
@@ -169,7 +172,10 @@ max-height: 144px;
   position: fixed;
   top: 92%;
   left: 47%;
+  background-color: rgb(220, 231, 118);
+  border: #000000 solid 2px;
 }
+
 .divEnviarMsg {
   display: none;
   position: fixed;
@@ -203,8 +209,3 @@ max-height: 144px;
 .bEnviarMsg:hover {
   filter: drop-shadow(0 0 2em #2ec754);
 }
-
-/* .tArea {
-  width: 100%;
-  min-height: 200px;
-} */
