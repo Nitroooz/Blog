@@ -12,7 +12,8 @@ function App() {
 
   const [textInput, setTextInput] = useState('');
   const [tInput, setTInput] = useState('');
-  const [posts, setPosts] = useState([{ user: "Vitor", text: "alow", photo: "", time: 0 }]);
+  const [titlePost, setTitlePost] = useState('');
+  const [posts, setPosts] = useState([{ user: "", text: "", photo: "", title: "", time: 0 }]);
   const [campoTextoVisivel, setCampoTextoVisivel] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -47,8 +48,9 @@ function App() {
       return;
     }
     
-    writeUserData(tInput);
+    writeUserData(tInput, titlePost);
     setTInput('');
+    setTitlePost('');
     setCampoTextoVisivel(false);
   };
 
@@ -82,31 +84,46 @@ function App() {
             <div className='divConteudoPosts'>
               <h2 className='tNameUser'>{post.user}:</h2>
               {post.time&&<h5 className='tHorario'>{`${(new Date(post.time)).getDate() < 10? "0"+(new Date(post.time)).getDate().toString() : (new Date(post.time)).getDate()}/${((new Date(post.time)).getMonth() + 1) < 10 ? "0" + ((new Date(post.time)).getMonth() + 1).toString() : ((new Date(post.time)).getMonth() + 1)}`} {`${(new Date(post.time)).getHours() < 10? "0"+(new Date(post.time)).getHours().toString() : (new Date(post.time)).getHours()}:${(new Date(post.time)).getMinutes() < 10? "0"+(new Date(post.time)).getMinutes().toString() : (new Date(post.time)).getMinutes()}`}</h5>}
+              <div className='divConteudoPosts titleText'>
+              <h2 className='tTitlePost'>{post.title ? post.title : "Sem Título"}</h2>
               <h3 className='tTextPost'>{post.text}</h3>
+              </div>
             </div>
           </div>
         ))}
       </div>
       <div
         className='divEnviarMsg'
-        style={{ display: campoTextoVisivel ? 'block' : 'none' }}
-      >
-        <input
-          className='input1'
-          id='input1'
-          placeholder="Digite sua mensagem..."
-          value={tInput}
-          onChange={(event) => setTInput(event.target.value)}
-          onKeyUp={(event) => {
-            if (event.key === "Enter") {
-              handleEnviarClick();
-            }
-          }}
-        />
+        style={{ display: campoTextoVisivel ? 'block' : 'none' }}>
+        <div className='inputs'>
+          <input
+            className='input1'
+            id='titlePost'
+            placeholder="Digite o titulo..."
+            value={titlePost}
+            onChange={(event) => setTitlePost(event.target.value)}
+            onKeyUp={(event) => {
+              if (event.key === "Enter") {
+                handleEnviarClick();
+              }
+            }}
+          />
+          <input
+            className='input1'
+            id='input1'
+            placeholder="Digite seu texto..."
+            value={tInput}
+            onChange={(event) => setTInput(event.target.value)}
+            onKeyUp={(event) => {
+              if (event.key === "Enter") {
+                handleEnviarClick();
+              }
+            }}
+          />
+        </div>
         <button
           className="bEnviarMsg"
-          onClick={handleEnviarClick}
-        >
+          onClick={handleEnviarClick}>
           Enviar
         </button>
       </div>

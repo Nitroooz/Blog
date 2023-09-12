@@ -151,6 +151,26 @@ max-height: 144px;
   margin: 2% 0 0 5%;
 }
 
+.tTitlePost {
+  color: rgb(0, 0, 0);
+  background-color: #7a9ab9;
+  width: auto;
+  border-radius: 50px;
+  height: auto;
+  border: #000000 solid 2px;
+  font-size: larger;
+  display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 1% 0 0 0;
+}
+
+.titleText{
+  display: flex;
+  justify-content: center;
+}
+
+
 .tHorario {
   margin: 2% 0px 0px 7px;
   color: white;
@@ -170,7 +190,7 @@ max-height: 144px;
   margin: 0px;
   color: rgb(0, 0, 0);
   position: fixed;
-  top: 92%;
+  top: 90%;
   left: 47%;
   background-color: rgb(220, 231, 118);
   border: #000000 solid 2px;
@@ -179,22 +199,31 @@ max-height: 144px;
 .divEnviarMsg {
   display: none;
   position: fixed;
-  top: 92%;
+  top: 80%;
   left: 25%;
   width: 50%;
-  height: 48px;
+  height: 112px;
   border: white 1px solid;
   border-radius: 10px;
   background-color: #99b381;
 }
 
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .input1 {
+  display: flex;
+  align-items: center;
   background-color: white;
   border: white 1px solid;
   border-radius: 50px;
   color: rgb(0, 0, 0);
-  width: 80%;
+  width: 95%;
   padding: 3px 3px 3px 5px;
+  margin: 8px 0 0 0;
   font-size: medium;
   font-weight: bold;
 }
@@ -203,8 +232,8 @@ max-height: 144px;
   color: rgb(0, 0, 0);
   background-image: linear-gradient(180deg, #f6fd17, #43b64c);
   border: 2px solid rgb(0, 0, 0);
-  margin: 4px;
-  padding: 7px 10px 7px 10px;
+  margin: 6px;
+  padding: 5px 12px 5px 12px;
 }
 .bEnviarMsg:hover {
   filter: drop-shadow(0 0 2em #2ec754);

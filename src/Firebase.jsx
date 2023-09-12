@@ -18,8 +18,7 @@ const firebaseConfig = {
   storageBucket: "miniblog-82c16.appspot.com",
   messagingSenderId: "350531564217",
   appId: "1:350531564217:web:4e51dafd97bbf5ad906168",
-  measurementId: "G-XSN4R090Q3",
-  databaseURL: 'https://miniblog-82c16-default-rtdb.firebaseio.com/',
+  measurementId: "G-XSN4R090Q3"
 };
 
 // Initialize Firebase
@@ -92,7 +91,7 @@ export function activateUpdate(setState) {
   });
 }
 
-export function writeUserData(texto) {
+export function writeUserData(texto , title) {
   const db = getDatabase(app);
   let aux = Date.now();
   set(ref(db, '/' + aux), {
@@ -100,5 +99,6 @@ export function writeUserData(texto) {
     user: userName,
     photo: photoURL,
     time: aux,
+    title: title,
   });
 }
