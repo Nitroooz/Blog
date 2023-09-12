@@ -160,9 +160,8 @@ max-height: 144px;
   border: #000000 solid 2px;
   font-size: larger;
   display: inline-block;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin: 1% 0 0 0;
+  padding: 0 2% 1px 2%;
+  margin: 1% 0 1px 0;
 }
 
 .titleText{
